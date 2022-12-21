@@ -1,7 +1,14 @@
 :root {
     --main-blue: #81d4fa;
     --blue-600: #039be5;
+    --main-orange: #ffab91;
     --elevation-06: #2E2E2E;
+    --high-emphasis: rgba(255, 255, 255, 0.87);
+    --medium-emphasis: rgba(255, 255, 255, 0.60);
+    --disabled-emphasis: rgba(255, 255, 255, 0.38);
+    --outline: rgba(255, 255, 255, 0.12);
+    --headline-2: 6rem;
+    --body-text: 1.6rem;
     --button: 1.4rem;
 }
 * {
@@ -16,6 +23,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     background-color: #121212;
+    overflow: hidden;
 }
 
 /*Header styles*/
@@ -99,6 +107,86 @@ header {
     height: auto;
 }
 
+/*Section one Styles*/
+
+.welcome-container {
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    place-content: center;
+}
+.welcome-hero-container {
+    width: 840px;
+    height: auto;
+}
+h1 {
+    font-size: 9.6rem;
+    font-weight: 300;
+    line-height: 11.6rem;
+    text-align: center;
+    color: var(--high-emphasis);
+}
+h1 .title-words {
+    background-color: var(--main-orange);
+    padding: 0 16px 0 8px;
+    display: inline-block;
+    position: relative;
+}
+h1 .title-words:before {
+    content: '';
+    background-color: #4A4A4A;
+    width: 1px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 7px;
+    animation: blinkAnim 500ms linear infinite;
+  }
+.welcome--phrase {
+    font-size: var(--body-text);
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: center;
+    color: var(--medium-emphasis);
+    margin: 40px 80px;
+}
+.welcome--button-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.welcome--button-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: var(--main-blue);
+    background: linear-gradient(45deg, rgba(129,212,250,1) 0%, rgba(3,155,229,1) 100%);
+    border-radius: 20px;
+    padding: 8px 16px 8px 16px;
+}
+.welcome--button-container a:hover {
+    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
+}
+.welcome--button-container a p {
+    font-size: var(--button);
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    color: #121212;
+    margin-top: 2px;
+}
+.welcome--button-container a span {
+    width: auto;
+    height: auto;
+    margin-left: 8px;
+}
+.welcome--button-container a span img {
+    width: 16px;
+    height: auto;
+}
+
 /*Footer styles*/
 
 
@@ -141,3 +229,11 @@ header {
     }
   }
   
+  @keyframes blinkAnim {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
