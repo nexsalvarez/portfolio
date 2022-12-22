@@ -10,8 +10,11 @@
     --disabled-emphasis: rgba(255, 255, 255, 0.38);
     --outline: rgba(255, 255, 255, 0.12);
     --headline-2: 6rem;
+    --headline-3: 4.8rem;
+    --headline-4: 3.4rem;
     --body-text: 1.6rem;
     --button: 1.4rem;
+    --caption: 1.2rem;
 }
 * {
     margin: 0;
@@ -200,6 +203,8 @@ h1 .title-words:before {
     display: grid;
     justify-content: center;
     padding-bottom: 40px;
+    position: absolute;
+    overflow: hidden;
 }
 h2 {
     font-size: var(--headline-2);
@@ -219,6 +224,7 @@ h2 {
     border-radius: 32px;
     margin-top: 40px;
     padding: 40px;
+    position: relative;
 }
 .types--buttons-container {
     width: 304px;
@@ -249,6 +255,74 @@ h2 {
     cursor: pointer;
     background-color: var(--elevation-09);
     color: var(--medium-emphasis);
+}
+.types-projects-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.agency-projects-container,
+.personal-projects-container,
+.data-projects-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+}
+.project-card {
+    width: 360px;
+    height: auto;
+    position: relative;
+}
+.project-card picture {
+    width: auto;
+    height: auto;
+}
+.project-card picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.project--title {
+    font-size: var(--headline-4);
+    font-weight: 400;
+    line-height: 4rem;
+    color: var(--high-emphasis);
+    margin-top: 16px;
+}
+.project--description {
+    font-size: var(--body-text);
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--medium-emphasis);
+    margin: 8px 0;
+}
+.project--date {
+    color: var(--disabled-emphasis);
+}
+.project--url {
+    font-size: var(--body-text);
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-decoration: none;
+    color: var(--main-blue);
+}
+.project--url:hover {
+    color: #b3e5fc;
+}
+.project--type {
+    font-size: var(--caption);
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: #121212;
+    background-color: var(--main-blue);
+    padding: 4px 16px;
+    position: absolute;
+    top: 6%;
+    right: 0%;
 }
 
 /*Footer styles*/

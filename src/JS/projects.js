@@ -16,14 +16,15 @@ class Project {
         let newProject = document.createElement('div');
         newProject.classList.add('project-card')
 
-        let view = `<picture>
+        let view = `<div class="project-card">
+        <picture>
         <img src="${this.img}" alt="${this.name}">
         </picture>
         <p class="project--type">${this.type}</p>
         <h3 class="project--title">${this.name}</h3>
         <p class="project--description">${this.description} <span class="project--date">${this.date}</span></p>
-        <a href="${this.url}" target="_blank" class="project--url"><p>Observa el proyecto</p></a>
-        `
+        <a href="${this.url}" target="_blank" class="project--url">Observa el proyecto</a>
+        </div>`
         let newViewProject = function () {
             return newProject.innerHTML = view;
         };
