@@ -1,4 +1,8 @@
 const spanTitle = document.querySelector('#words');
+const agencyButton = document.querySelector('#agency-button');
+const personalButton = document.querySelector('#personal-button');
+const dataButton = document.querySelector('#data-button');
+
 const wordsTitle = ["nexsalvarez", "developer", "data analyst", "Nestor", "front-end"];
 let wordsTitleContent = spanTitle.innerHTML;
 let addingWord = false;

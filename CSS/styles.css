@@ -2,7 +2,9 @@
     --main-blue: #81d4fa;
     --blue-600: #039be5;
     --main-orange: #ffab91;
+    --elevation-03: #252525;
     --elevation-06: #2E2E2E;
+    --elevation-09: #383838;
     --high-emphasis: rgba(255, 255, 255, 0.87);
     --medium-emphasis: rgba(255, 255, 255, 0.60);
     --disabled-emphasis: rgba(255, 255, 255, 0.38);
@@ -23,7 +25,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     background-color: #121212;
-    overflow: hidden;
 }
 
 /*Header styles*/
@@ -108,7 +109,11 @@ header {
 }
 
 /*Section one Styles*/
-
+main {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 .welcome-container {
     width: 100%;
     min-height: 90vh;
@@ -185,6 +190,65 @@ h1 .title-words:before {
 .welcome--button-container a span img {
     width: 16px;
     height: auto;
+}
+
+/*Section two styles*/
+
+.projects-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+h2 {
+    font-size: var(--headline-2);
+    font-weight: 300;
+    line-height: 7.4rem;
+    text-align: center;
+    color: var(--high-emphasis);
+}
+.projects-general-container {
+    width: 1260px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--elevation-03);
+    border-radius: 32px;
+    margin-top: 40px;
+    padding: 40px;
+}
+.types--buttons-container {
+    width: 304px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--elevation-06);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    padding: 8px;
+}
+.types--buttons {
+    width: auto;
+    height: auto;
+    background-color: var(--main-orange);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: var(--button);
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    color: #121212;
+}
+.types--buttons:hover {
+    cursor: pointer;
+    background-color: var(--elevation-09);
+    color: var(--medium-emphasis);
 }
 
 /*Footer styles*/
