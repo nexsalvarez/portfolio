@@ -387,6 +387,98 @@ h2 {
 
 /*Footer styles*/
 
+footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 10vw;
+}
+.footer-container {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin-top: 40px;
+}
+.contact-container {
+    width: 100%;
+    height: auto;
+    border-right: 1px solid var(--outline);
+}
+.contact--direction {
+    width: auto;
+    height: auto;
+    grid-column: 1;
+    margin-bottom: 50px;
+}
+.contact--direction li {
+    font-size: var(--body-text);
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--medium-emphasis);
+    list-style: none;
+}
+.contact--direction li span {
+    color: var(--main-orange);
+}
+.contact--social,
+.rights-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.contact--social li,
+.rights-container li {
+    display: inline;
+    list-style: none;
+    margin: 0 2px;
+}
+.contact--social li img {
+    width: 48px;
+    height: auto;
+}
+.contact--social li img:hover {
+    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
+}
+.pitch-container {
+    width: auto;
+    height: auto;
+    grid-column: 2;
+    padding: 0 60px;
+}
+.pitch--phrase {
+    font-size: var(--body-text);
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: center;
+    color: var(--medium-emphasis);
+    margin-bottom: 40px;
+}
+.pitch--phrase span {
+    color: var(--main-orange);
+}
+.rights-container li {
+    font-size: var(--body-text);
+    font-weight: 300;
+    line-height: 2.4rem;
+    color: var(--medium-emphasis);
+}
+.rights-container a {
+    text-decoration: none;
+}
+.rights-container a li {
+    color: var(--main-blue);
+}
+.rights-container a li:hover {
+    color: #b3e5fc;
+}
 
 /*Animations*/
 
