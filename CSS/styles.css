@@ -29,6 +29,9 @@ body {
     color: #FFFFFF;
     background-color: #121212;
 }
+.inactive {
+    display: none;
+}
 
 /*Header styles*/
 
@@ -240,7 +243,7 @@ h2 {
 .types--buttons {
     width: auto;
     height: auto;
-    background-color: var(--main-orange);
+    background-color: transparent;
     border: none;
     border-radius: 8px;
     padding: 8px 16px;
@@ -248,12 +251,16 @@ h2 {
     font-weight: 500;
     line-height: 1.8rem;
     text-transform: uppercase;
-    color: #121212;
+    color: var(--medium-emphasis);
 }
 .types--buttons:hover {
     cursor: pointer;
     background-color: var(--elevation-09);
     color: var(--medium-emphasis);
+}
+.types--buttons-container .active-btn {
+    background-color: var(--main-orange);
+    color: #121212;
 }
 .types-projects-container {
     width: 100%;
@@ -324,11 +331,19 @@ h2 {
     font-weight: 500;
     line-height: 1.6rem;
     color: #121212;
-    background-color: var(--main-blue);
     padding: 4px 16px;
     position: absolute;
     top: 6%;
     right: 0%;
+}
+.work-wp {
+    background-color: var(--main-blue);
+}
+.work-code {
+    background-color: var(--main-orange);
+}
+.work-data {
+    background-color: var(--main-blue);
 }
 
 /*Section three styles*/
@@ -466,7 +481,7 @@ footer {
 }
 .rights-container li {
     font-size: var(--body-text);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2.4rem;
     color: var(--medium-emphasis);
 }
