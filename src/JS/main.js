@@ -2,8 +2,8 @@ const spanTitle = document.querySelector('#words');
 const agencyButton = document.querySelector('#agency-button');
 const personalButton = document.querySelector('#personal-button');
 const dataButton = document.querySelector('#data-button');
-const agencyProjects = null || document.querySelector('.agency-projects-container');
-const personalProjects = null || document.querySelector('#personal-projects-id');
+const personalProjects = null || document.querySelector('.personal-projects-container');
+const agencyProjects = null || document.querySelector('#agency-projects-id');
 const dataProjects = null || document.querySelector('#data-projects-id');
 
 const wordsTitle = ["nexsalvarez", "developer", "data analyst", "Nestor", "front-end"];
@@ -38,28 +38,6 @@ setInterval (function() {
 }, 150);
 
 
-function viewAgencyProjects() {
-  let filterAgency = projects.filter(project => project.work == 'Agency');
-
-  let workAgency = `
-    ${filterAgency.map(project => 
-      `<div class="project-card">
-      <picture>
-      <img src="${project.img}" alt="${project.name}">
-      </picture>
-      <p class="project--type work-wp">${project.type}</p>
-      <h3 class="project--title">${project.name}</h3>
-      <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
-      <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
-      </div>
-    `).join(' ')}
-  `;
-  
-  return agencyProjects.innerHTML = workAgency;
-}
-
-viewAgencyProjects();
-
 function viewPersonalProjects() {
   let filterPersonal = projects.filter(project => project.work == 'Personal');
 
@@ -67,9 +45,10 @@ function viewPersonalProjects() {
     ${filterPersonal.map(project => 
       `<div class="project-card">
       <picture>
-      <img src="${project.img}" alt="${project.name}">
+      <source media="(min-width: 720px)" srcset="${project.img}">
+      <img src="${project.mobile}" alt="${project.name}">
       </picture>
-      <p class="project--type work-code">${project.type}</p>
+      <p class="project--type">${project.type}</p>
       <h3 class="project--title">${project.name}</h3>
       <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
       <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
@@ -80,6 +59,29 @@ function viewPersonalProjects() {
   return personalProjects.innerHTML = workPersonal;
 }
 
+viewPersonalProjects();
+
+function viewAgencyProjects() {
+  let filterAgency = projects.filter(project => project.work == 'Agency');
+
+  let workAgency = `
+    ${filterAgency.map(project => 
+      `<div class="project-card">
+      <picture>
+      <source media="(min-width: 720px)" srcset="${project.img}">
+      <img src="${project.mobile}" alt="${project.name}">
+      </picture>
+      <p class="project--type">${project.type}</p>
+      <h3 class="project--title">${project.name}</h3>
+      <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
+      <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
+      </div>
+    `).join(' ')}
+  `;
+  
+  return agencyProjects.innerHTML = workAgency;
+}
+
 function viewDataProjects () {
   let filterData = projects.filter(project => project.work == 'Data');
 
@@ -87,9 +89,10 @@ function viewDataProjects () {
     ${filterData.map(project => 
       `<div class="project-card">
       <picture>
-      <img src="${project.img}" alt="${project.name}">
+      <source media="(min-width: 720px)" srcset="${project.img}">
+      <img src="${project.mobile}" alt="${project.name}">
       </picture>
-      <p class="project--type work-data">${project.type}</p>
+      <p class="project--type">${project.type}</p>
       <h3 class="project--title">${project.name}</h3>
       <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
       <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>

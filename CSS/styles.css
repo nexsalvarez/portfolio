@@ -285,6 +285,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 32px;
 }
 .project-card picture {
     width: auto;
@@ -331,19 +332,11 @@ h2 {
     font-weight: 500;
     line-height: 1.6rem;
     color: #121212;
+    background-color: var(--main-blue);
     padding: 4px 16px;
     position: absolute;
     top: 6%;
     right: 0%;
-}
-.work-wp {
-    background-color: var(--main-blue);
-}
-.work-code {
-    background-color: var(--main-orange);
-}
-.work-data {
-    background-color: var(--main-blue);
 }
 
 /*Section three styles*/
