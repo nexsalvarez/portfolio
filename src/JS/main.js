@@ -74,7 +74,7 @@ function viewPersonalProjects() {
       <source media="(min-width: 720px)" srcset="${project.img}">
       <img src="${project.mobile}" alt="${project.name}">
       </picture>
-      <p class="project--type">${project.type}</p>
+      <p class="project--type ${project.class}">${project.type}</p>
       <h3 class="project--title">${project.name}</h3>
       <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
       <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
@@ -118,7 +118,7 @@ function viewDataProjects () {
       <source media="(min-width: 720px)" srcset="${project.img}">
       <img src="${project.mobile}" alt="${project.name}">
       </picture>
-      <p class="project--type">${project.type}</p>
+      <p class="project--type ${project.class}">${project.type}</p>
       <h3 class="project--title">${project.name}</h3>
       <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
       <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
@@ -128,6 +128,7 @@ function viewDataProjects () {
 
   return dataProjects.innerHTML = workData;
 }
+
 
 function createButtonProjects () {
   const btn = document.createElement('div');

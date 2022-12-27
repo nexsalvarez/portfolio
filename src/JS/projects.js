@@ -37,17 +37,19 @@ let projects = [
       'mobile': './src/img/mobile/screen-finanzas-personales.jpg',
       'type': 'Sheets',
       'description': 'Todas las herramientas para hacer una gestión efectiva del dinero, con funcionalidades avanzadas de Google Sheets.',
-      'url': 'https://docs.google.com/spreadsheets/d/112ndKTUycJ1hyDELMTQcw6Ne-NGZKH4g10ZLzCsViuA/edit?usp=sharing'
+      'url': 'https://docs.google.com/spreadsheets/d/112ndKTUycJ1hyDELMTQcw6Ne-NGZKH4g10ZLzCsViuA/edit?usp=sharing',
+      'class': 'sheets-work'
     },
     {
       'work': 'Personal',
       'name': 'Divisor de gastos',
       'date': 'Oct 2022',
-      'img': './src/img/desktop/screen-lirioentrecardos.jpg',
-      'mobile': './src/img/mobile/screen-lirioentrecardos.jpg',
+      'img': './src/img/desktop/screen-divisor-ingresos.jpg',
+      'mobile': './src/img/mobile/screen-divisor-ingresos.jpg',
       'type': 'Código',
       'description': 'Herramienta básica diseñada para ayudar a otras personas a organizar sus gastos mensuales y finanzas personales.',
-      'url': 'https://lirioentrecardos.com/'
+      'url': 'https://lirioentrecardos.com/',
+      'class': 'code-work'
     },
     {
       'work': 'Personal',
@@ -57,7 +59,8 @@ let projects = [
       'mobile': './src/img/mobile/screen-calendario-deportivo.jpg',
       'type': 'Código',
       'description': 'Con ayuda de Platzi para practicar el consumo de API Rest, colocando los partidos de mis equipos favoritos.',
-      'url': 'https://nexsalvarez.github.io/platzi-practice-async-landing/'
+      'url': 'https://nexsalvarez.github.io/platzi-practice-async-landing/',
+      'class': 'code-work'
     },
     {
       'work': 'Agency',

@@ -341,6 +341,12 @@ h2 {
     top: 6%;
     right: 0%;
 }
+.project-card .code-work {
+    background-color: var(--main-orange);
+}
+.project-card .sheets-work {
+    background-color: #a5d6a7;
+}
 .project-button--ancla {
     width: 100%;
     height: auto;
