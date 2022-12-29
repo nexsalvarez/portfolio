@@ -24,7 +24,7 @@ let projects = [
       'name': 'Servicointi',
       'date': 'Feb 2022',
       'img': './src/img/desktop/desktop-capture-servicointi.png',
-      'mobile': './src/img/mobile/screen-servicointi.png',
+      'mobile': './src/img/desktop/desktop-capture-servicointi.png',
       'type': 'WordPress',
       'description': 'La página web de la empresa familiar, Servicointi, fue creada por mí utilizando las herramientas de WordPress.',
       'url': 'https://servicointi.com/'

@@ -1,0 +1,51 @@
+.projects-container {
+    padding: 0 28px;
+    margin-bottom: 40px;
+}
+.projects-general-container {
+    width: auto;
+    padding: 28px;
+}
+.agency-projects-container,
+.personal-projects-container,
+.data-projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 28px;
+}
+.project-card {
+    width: auto;
+}
+.skills-container,
+.tech-container {
+    padding: 0 28px;
+    margin-bottom: 40px;
+}
+.skills-types-container {
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.tech-knowledge {
+    width: auto;
+    padding: 28px;
+    align-items: baseline;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.tech-knowledge::-webkit-scrollbar {
+    display: none;
+}
+.tech-knowledge img {
+    padding: 0 14px;
+}
+footer {
+    padding: 40px 28px;
+}
+.pitch-container {
+    padding: 0;
+}
+.pitch--phrase {
+    padding: 0 40px;
+}

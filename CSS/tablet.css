@@ -1,0 +1,32 @@
+.header-container {
+    padding: 0 28px;
+}
+.welcome-container {
+    padding: 0 28px;
+}
+.welcome-hero-container {
+    width: auto;
+}
+.agency-projects-container,
+.personal-projects-container,
+.data-projects-container {
+    grid-template-columns: 1fr 1fr;
+}
+.skills-types-container {
+    grid-template-columns: 1fr 1fr;
+}
+.contact-container {
+    border-right: none;
+}
+.pitch-container {
+    padding: 0;
+}
+.pitch--phrase {
+    margin-bottom: 28px;
+}
+.rights-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}

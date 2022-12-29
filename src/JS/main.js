@@ -9,6 +9,8 @@ const projectsContainer = document.querySelector('.projects-container');
 const typesProjectsContainer = document.querySelector('.types-projects-container');
 const skillsContainer = document.querySelector('.skills-container');
 const techContainer = document.querySelector('.tech-container');
+const techKnowledge = document.querySelector('.tech-knowledge');
+const techScroll = techKnowledge.scrollWidth;
 const footer = document.querySelector('footer');
 
 const wordsTitle = ["nexsalvarez", "developer", "data analyst", "Nestor", "front-end"];
@@ -181,4 +183,23 @@ dataButton.addEventListener('click', () => {
   personalButton.classList.remove('active-btn');
   dataButton.classList.add('active-btn');
   buttonProjectsAncla.classList.replace('project-button--ancla', 'inactive');
+});
+
+
+function isElementInViewport (tech) {
+  let rect = tech.getBoundingClientRect();
+  return rect.right > 0;
+}
+window.addEventListener('load', () => {
+  self.setInterval (() => {
+    const first = document.querySelector('.tech-knowledge img');
+
+    if(!isElementInViewport(first)){
+      techKnowledge.appendChild(first);
+      techKnowledge.scrollTo(techKnowledge.scrollLeft - first.offsetWidth, 0);
+     }
+    if (techKnowledge.scrollLeft !== techScroll) {
+      techKnowledge.scrollTo(techKnowledge.scrollLeft + 1, 0);
+    }
+  }, 15);
 });
