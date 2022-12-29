@@ -47,7 +47,7 @@ let projects = [
       'img': './src/img/desktop/screen-divisor-ingresos.jpg',
       'mobile': './src/img/mobile/screen-divisor-ingresos.jpg',
       'type': 'Código',
-      'description': 'Herramienta básica diseñada para ayudar a otras personas a organizar sus gastos mensuales y finanzas personales.',
+      'description': 'Herramienta básica diseñada para ayudar a crear presupuestos personales, con las fórmulas de referentes en el tema.',
       'url': 'https://lirioentrecardos.com/',
       'class': 'code-work'
     },
@@ -89,7 +89,7 @@ let projects = [
       'img': './src/img/desktop/screen-misael.jpg',
       'mobile': './src/img/mobile/screen-misael.jpg',
       'type': 'WordPress',
-      'description': 'Formé parte del rediseño del sitio web de Misael, un sitio web de marca personal y academia educativa.',
+      'description': 'Formé parte del rediseño del sitio web de Misael, combina sus servicios de marca personal y su academia educativa.',
       'url': 'https://diazmisael.com/'
     },
     {

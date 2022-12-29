@@ -237,6 +237,7 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: var(--elevation-03);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     border-radius: 32px;
     margin-top: 40px;
     padding: 40px;
@@ -250,6 +251,7 @@ h2 {
     align-items: center;
     gap: 8px;
     background-color: var(--elevation-06);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     border-radius: 12px;
     margin-bottom: 40px;
     padding: 8px;
@@ -373,6 +375,7 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: var(--elevation-09);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     border-radius: 50px;
     text-decoration: none;
     text-align: center;
@@ -428,6 +431,7 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: var(--elevation-06);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     border-radius: 14px;
 }
 .skills--card figure:hover {
@@ -457,6 +461,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--elevation-03);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     border-radius: 32px;
     margin-top: 40px;
     padding: 40px;
