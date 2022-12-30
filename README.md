@@ -14,6 +14,8 @@ The structure of the landing page prioritizes the display of the projects, in a 
 
 I started to carry out this project in the middle of December of the year 2022.
 
+Live site: [nexsalvarez](https://nexsalvarez.com/)
+
 ## Technologies
 
 As it is a simple landing page to show my projects as a frontend developer and data analyst, for its construction I used the basic technologies for frontend development:

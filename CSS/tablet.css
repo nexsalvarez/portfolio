@@ -2,7 +2,8 @@
     padding: 0 28px;
 }
 .welcome-container {
-    padding: 0 28px;
+    height: auto;
+    padding: 120px 28px;
 }
 .welcome-hero-container {
     width: auto;
