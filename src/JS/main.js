@@ -188,8 +188,9 @@ dataButton.addEventListener('click', () => {
 
 function isElementInViewport (tech) {
   let rect = tech.getBoundingClientRect();
-  return rect.right > 0;
+  return rect.right > 0 && rect.left < window.innerWidth;
 }
+
 window.addEventListener('load', () => {
   self.setInterval (() => {
     const first = document.querySelector('.tech-knowledge img');

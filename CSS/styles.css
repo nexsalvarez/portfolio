@@ -88,12 +88,12 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    border: 2px solid var(--main-blue);
-    border-radius: 20px;
-    padding: 6px 12px 6px 12px;
+    background-color: var(--main-blue);
+    border-radius: 8px;
+    padding: 7px 28px 7px 28px;
 }
 .menu--button-container a:hover {
-    background-color: var(--elevation-06);
+    background-color: var(--blue-600);
     -webkit-animation: scale-down-center 0.1s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
 	        animation: scale-down-center 0.1s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
 }
@@ -101,18 +101,7 @@ header {
     font-size: var(--button);
     font-weight: 500;
     line-height: 1.8rem;
-    text-transform: uppercase;
-    color: var(--main-blue);
-    margin-top: 2px;
-}
-.menu--button-container a span {
-    width: auto;
-    height: auto;
-    margin-left: 8px;
-}
-.menu--button-container a span img {
-    width: 16px;
-    height: auto;
+    color: #121212;
 }
 .menu--mobile-cv {
     display: none;
@@ -182,12 +171,12 @@ h1 .title-words:before {
     display: flex;
     align-items: center;
     text-decoration: none;
-    background: var(--main-blue);
-    background: linear-gradient(45deg, rgba(129,212,250,1) 0%, rgba(3,155,229,1) 100%);
-    border-radius: 20px;
-    padding: 8px 16px 8px 16px;
+    background-color: var(--main-blue);
+    border-radius: 8px;
+    padding: 14px 28px 14px 28px;
 }
 .welcome--button-container a:hover {
+    background-color: var(--blue-600);
     -webkit-animation: scale-down-center 0.4s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
 	        animation: scale-down-center 0.4s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
 }
@@ -195,9 +184,7 @@ h1 .title-words:before {
     font-size: var(--button);
     font-weight: 500;
     line-height: 1.8rem;
-    text-transform: uppercase;
     color: #121212;
-    margin-top: 2px;
 }
 .welcome--button-container a span {
     width: auto;
