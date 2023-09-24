@@ -5,6 +5,7 @@ const dataButton = document.querySelector('#data-button');
 const personalProjects = null || document.querySelector('.personal-projects-container');
 const agencyProjects = null || document.querySelector('#agency-projects-id');
 const dataProjects = null || document.querySelector('#data-projects-id');
+const welcomeContainer = document.querySelector('.welcome-container');
 const projectsContainer = document.querySelector('.projects-container');
 const typesProjectsContainer = document.querySelector('.types-projects-container');
 const skillsContainer = document.querySelector('.skills-container');
@@ -13,47 +14,84 @@ const techKnowledge = document.querySelector('.tech-knowledge');
 const techScroll = techKnowledge.scrollWidth;
 const footer = document.querySelector('footer');
 
-const wordsTitle = ["nexsalvarez", "developer", "data analyst", "Nestor", "front-end"];
+const wordsTitle = ["nexsalvarez", "data analyst", "developer"];
 let wordsTitleContent = spanTitle.innerHTML;
 let addingWord = false;
 let counter = 1;
+let isActive = false;
+let intervalActive = false;
 
-setInterval (function() {
+const titleSec = document.querySelector('#welcome-sec');
+
+const isVisible = () => {
+  const rect = titleSec.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= window.innerHeight;
+};
+
+let interval;
+
+const changeWords = () => {
+  if (isActive && isVisible()) {
     if(wordsTitleContent.length > 0 && !addingWord) {
-        spanTitle.innerHTML = wordsTitleContent.slice(0, -1);
-        wordsTitleContent = spanTitle.innerHTML;
+      spanTitle.innerHTML = wordsTitleContent.slice(0, -1);
+      wordsTitleContent = spanTitle.innerHTML;
     } else {
-        addingWord = true;
+      addingWord = true;
     }
 
     if(addingWord) {
-        if(wordsTitleContent.length < wordsTitle[counter].length) {
-          spanTitle.innerHTML = wordsTitle[counter].slice(0, wordsTitleContent.length +1);
-          wordsTitleContent = spanTitle.innerHTML;
-        } else {
-          if(counter < wordsTitle.length) {
-            counter ++;
-          }
-          addingWord = false;
+      if(wordsTitleContent.length < wordsTitle[counter].length) {
+        spanTitle.innerHTML = wordsTitle[counter].slice(0, wordsTitleContent.length +1);
+        wordsTitleContent = spanTitle.innerHTML;
+      } else {
+        if(counter < wordsTitle.length) {
+          counter ++;
         }
+        addingWord = false;
+      }
     }
 
     if(counter == wordsTitle.length) {
-        counter = 0;
+      counter = 0;
     }
-    
-}, 150);
+  }
+};
+
+window.addEventListener('visibilitychange', () => {
+  isActive = titleSec.hidden === false;
+  if (isActive && !intervalActive) {
+    interval = setInterval(changeWords, 150);
+    intervalActive = true;
+  } else if (!isActive && intervalActive) {
+    clearInterval(interval);
+    intervalActive = false;
+  }
+});
 
 const loadElements = (entradas, observador) => {
   entradas.forEach((entrada) => {
     if (entrada.isIntersecting) {
       entrada.target.classList.add('visible');
     } else {
-      // entrada.target.classList.remove('visible');
-      console.log('Sección terminada');
+      entrada.target.classList.remove('visible');
     }
   });
-}
+};
+
+const observer = new IntersectionObserver(loadElements);
+
+const targets = document.querySelectorAll('.show-on-scroll');
+targets.forEach((target) => {
+  observer.observe(target);
+});
+
+const observadorD = new IntersectionObserver (loadElements, {
+  root: null,
+  rootMargin: '0px 0px 0px 0px',
+  threshold: 0.2
+});
+
+observadorD.observe(welcomeContainer);
 
 const observador = new IntersectionObserver (loadElements, {
   root: null,
@@ -61,6 +99,7 @@ const observador = new IntersectionObserver (loadElements, {
   threshold: 0.2
 });
 
+observador.observe(welcomeContainer);
 observador.observe(projectsContainer);
 observador.observe(skillsContainer);
 observador.observe(techContainer);
