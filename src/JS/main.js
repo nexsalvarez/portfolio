@@ -106,7 +106,7 @@ observador.observe(techContainer);
 observador.observe(footer);
 
 function viewPersonalProjects() {
-  let filterPersonal = projects.filter(project => project.work == 'Personal');
+  let filterPersonal = projects.filter(project => project.work == 'Own');
 
   let workPersonal = `
     ${filterPersonal.map(project => 
@@ -129,7 +129,7 @@ function viewPersonalProjects() {
 viewPersonalProjects();
 
 function viewAgencyProjects() {
-  let filterAgency = projects.filter(project => project.work == 'Agency');
+  let filterAgency = projects.filter(project => project.work == 'Costumer');
 
   let workAgency = `
     ${filterAgency.map(project => 
@@ -150,7 +150,7 @@ function viewAgencyProjects() {
 }
 
 function viewDataProjects () {
-  let filterData = projects.filter(project => project.work == 'Data');
+  let filterData = projects.filter(project => project.work == 'Website');
 
   let workData = `
     ${filterData.map(project => 
@@ -221,7 +221,7 @@ dataButton.addEventListener('click', () => {
   agencyButton.classList.remove('active-btn');
   personalButton.classList.remove('active-btn');
   dataButton.classList.add('active-btn');
-  buttonProjectsAncla.classList.replace('project-button--ancla', 'inactive');
+  buttonProjectsAncla.classList.replace('inactive', 'project-button--ancla');
 });
 
 
