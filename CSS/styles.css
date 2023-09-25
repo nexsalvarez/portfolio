@@ -347,6 +347,9 @@ h2 {
 .project-card .sheets-work {
     background-color: #a5d6a7;
 }
+.project-card .dataviz-work {
+    background-color: #fca5a5;
+}
 .project-button--ancla {
     width: 100%;
     height: auto;

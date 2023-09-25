@@ -57,6 +57,8 @@ const changeWords = () => {
   }
 };
 
+changeWords();
+
 window.addEventListener('visibilitychange', () => {
   isActive = titleSec.hidden === false;
   if (isActive && !intervalActive) {
@@ -99,7 +101,6 @@ const observador = new IntersectionObserver (loadElements, {
   threshold: 0.2
 });
 
-observador.observe(welcomeContainer);
 observador.observe(projectsContainer);
 observador.observe(skillsContainer);
 observador.observe(techContainer);
@@ -118,7 +119,7 @@ function viewPersonalProjects() {
       <p class="project--type ${project.class}">${project.type}</p>
       <h3 class="project--title">${project.name}</h3>
       <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
-      <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
+      <a href="${project.url}" target="_blank" class="project--url">Look at the project</a>
       </div>
     `).join(' ')}
   `;
@@ -141,7 +142,7 @@ function viewAgencyProjects() {
       <p class="project--type">${project.type}</p>
       <h3 class="project--title">${project.name}</h3>
       <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
-      <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
+      <a href="${project.url}" target="_blank" class="project--url">Look at the project</a>
       </div>
     `).join(' ')}
   `;
@@ -162,7 +163,7 @@ function viewDataProjects () {
       <p class="project--type ${project.class}">${project.type}</p>
       <h3 class="project--title">${project.name}</h3>
       <p class="project--description">${project.description} <span class="project--date">${project.date}</span></p>
-      <a href="${project.url}" target="_blank" class="project--url">Observa el proyecto</a>
+      <a href="${project.url}" target="_blank" class="project--url">Look at the project</a>
       </div>
     `).join(' ')}
   `;
@@ -183,7 +184,7 @@ function createButtonProjects () {
   enlace.setAttribute('href', '#box-btn');
 
   btn.appendChild(enlace);
-  btn.classList.add('inactive');
+  btn.classList.add('project-button--ancla');
   btn.setAttribute('id', 'projects-ancla');
 
   return typesProjectsContainer.appendChild(btn);
@@ -201,7 +202,6 @@ agencyButton.addEventListener('click', () => {
   personalButton.classList.remove('active-btn');
   dataButton.classList.remove('active-btn');
   agencyButton.classList.add('active-btn');
-  buttonProjectsAncla.classList.replace('inactive', 'project-button--ancla');
 });
 personalButton.addEventListener('click', () => {
   agencyProjects.classList.replace('agency-projects-container', 'inactive');
@@ -211,7 +211,6 @@ personalButton.addEventListener('click', () => {
   agencyButton.classList.remove('active-btn');
   dataButton.classList.remove('active-btn');
   personalButton.classList.add('active-btn');
-  buttonProjectsAncla.classList.replace('project-button--ancla', 'inactive');
 });
 dataButton.addEventListener('click', () => {
   agencyProjects.classList.replace('agency-projects-container', 'inactive');
@@ -221,7 +220,6 @@ dataButton.addEventListener('click', () => {
   agencyButton.classList.remove('active-btn');
   personalButton.classList.remove('active-btn');
   dataButton.classList.add('active-btn');
-  buttonProjectsAncla.classList.replace('inactive', 'project-button--ancla');
 });
 
 
