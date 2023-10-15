@@ -57,7 +57,9 @@ const changeWords = () => {
   }
 };
 
-changeWords();
+document.addEventListener('DOMContentLoaded', () => {
+  changeWords();
+});
 
 window.addEventListener('visibilitychange', () => {
   isActive = titleSec.hidden === false;
@@ -101,6 +103,7 @@ const observador = new IntersectionObserver (loadElements, {
   threshold: 0.2
 });
 
+observador.observe(welcomeContainer);
 observador.observe(projectsContainer);
 observador.observe(skillsContainer);
 observador.observe(techContainer);
