@@ -166,5 +166,61 @@ let projects = [
       'description': 'Basic tool designed to help create personal budgets, with special formulas from leading authors on the subject.',
       'url': 'https://nexsalvarez.github.io/turttools-expenses-divisor/',
       'class': 'code-work'
+    },
+    {
+      'work': 'Costumer',
+      'name': 'Oscar digital marketing dashboard',
+      'date': 'Nov 2023',
+      'img': './src/img/desktop/desktop-capture-dataviz-oscar.jpg',
+      'mobile': './src/img/mobile/mobile-capture-dataviz-oscar.jpg',
+      'type': 'Looker',
+      'description': 'Data dashboard on the digital channels of the lawyer and writer Óscar Borja. Managed from my own marketing agency.',
+      'url': 'https://lookerstudio.google.com/reporting/4ffdc474-71dd-47c0-895f-8d305e763d1d',
+      'class': 'dataviz-work'
+    },
+    {
+      'work': 'Costumer',
+      'name': 'Myrelis digital marketing dashboard',
+      'date': 'Oct 2023',
+      'img': './src/img/desktop/desktop-capture-dataviz-myrelis.jpg',
+      'mobile': './src/img/mobile/mobile-capture-dataviz-myrelis.jpg',
+      'type': 'Looker',
+      'description': 'Data dashboard on the digital channels of brain health doctor Myrelis Aponte. Managed from my own marketing agency.',
+      'url': 'https://lookerstudio.google.com/reporting/6176264c-f957-4916-8c00-a71d6d0091b3',
+      'class': 'dataviz-work'
+    },
+    {
+      'work': 'Costumer',
+      'name': 'Flor digital marketing dashboard',
+      'date': 'Sep 2023',
+      'img': './src/img/desktop/desktop-capture-dataviz-flor.jpg',
+      'mobile': './src/img/mobile/mobile-capture-dataviz-flor.jpg',
+      'type': 'Looker',
+      'description': 'Data dashboard on the digital channels of mother coach Flor Lizano. Managed from my own marketing agency.',
+      'url': 'https://lookerstudio.google.com/reporting/3feb3f90-b1e5-4f8a-a914-b3fd1f08dee9',
+      'class': 'dataviz-work'
     }
+    // },
+    // {
+    //   'work': 'Costumer',
+    //   'name': 'David digital marketing dashboard',
+    //   'date': 'Jul 2023',
+    //   'img': './src/img/desktop/screen-divisor-ingresos.jpg',
+    //   'mobile': './src/img/mobile/screen-divisor-ingresos.jpg',
+    //   'type': 'Looker',
+    //   'description': 'Data dashboard on digital channels from sales and leadership coach David Cazares. Managed from my own marketing agency.',
+    //   'url': 'https://nexsalvarez.github.io/turttools-expenses-divisor/',
+    //   'class': 'dataviz-work'
+    // },
+    // {
+    //   'work': 'Costumer',
+    //   'name': 'Servicointi digital marketing dashboard',
+    //   'date': 'May 2023',
+    //   'img': './src/img/desktop/screen-divisor-ingresos.jpg',
+    //   'mobile': './src/img/mobile/screen-divisor-ingresos.jpg',
+    //   'type': 'Looker',
+    //   'description': 'Data dashboard on the digital channels of the Venezuelan company Servicointi. Managed from my own marketing agency.',
+    //   'url': 'https://nexsalvarez.github.io/turttools-expenses-divisor/',
+    //   'class': 'dataviz-work'
+    // }
   ];
