@@ -2,7 +2,7 @@
 
 My work projects are on the landing page that I developed as a portfolio, and here, in this repository, you can find the code.
 
-![Portfolio screenshot](./src/img/nexsalvarez-opengraph.jpg)
+![Portfolio screenshot](./src/img/nexsalvarez-opengraph-actualizado.jpg)
 
 ## Intro
 
